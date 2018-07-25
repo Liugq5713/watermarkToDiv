@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>水印demo</title>
+  <title>watermark-div demo</title>
   <script src="./dist/Watermark.js"></script>
   <style>
     html,
@@ -31,17 +31,15 @@
 <body>
   <div class="wrapper">
     <div class="left">
-      <h1>I have a watermark</h1>
     </div>
     <div class="right">
-      <h1>I have a div</h1>
     </div>
   </div>
   <script>
-    var watermark = new Watermark({ text: 'watermak' })
+    var watermark = new Watermark({ text: 'watermark' })
     watermark.embed('.left')
 
-    var watermark = new Watermark({ text: 'div' })
+    var watermark = new Watermark({ text: 'div', density: 0.3 })
     watermark.embed('.right')
   </script>
 </body>

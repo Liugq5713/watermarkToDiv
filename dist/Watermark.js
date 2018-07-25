@@ -25,7 +25,7 @@
     text: 'Hello world',
     density: 1,
     rotate: -1 / 6 * Math.PI,
-    font: '26px serif',
+    font: '16px serif',
     z_index: 2018,
     color: 'rgba(151,168,190,0.6)'
   };
@@ -120,6 +120,7 @@
 
     Watermark.prototype.embed = function embed(el) {
       if (!document.querySelector(el)) {
+        console.error('el is ' + document.querySelector(el));
         return;
       }
       var contain_el = document.querySelector(el);
